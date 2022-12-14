@@ -1,0 +1,421 @@
+.banner {
+  background-image: url("../../images/dance-g490301aaf_1920.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: sticky;
+
+}
+.banner a{
+ position: relative;
+  left: 500px;
+  bottom: 200px;
+  
+}
+.s{
+  padding-right: 4px;
+  position: relative;
+  bottom: 5px;
+}
+.text{
+  width:90%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index:1000;
+}
+.text span{
+  display: inline-block;
+  font-size:3vw;
+  font-family:'Cinzel', serif; 
+  font-weight: 800;
+  letter-spacing: 0.8vw;
+  color:black;
+  text-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  position: relative;
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards;
+}
+@keyframes fall{
+  100%{
+    transform: translateY(0);
+  }
+}
+.text span:nth-child(2){
+  animation-delay: 0.3s;
+}
+.text span:nth-child(3){
+  animation-delay: 0.6s;
+}
+.text span:nth-child(4){
+  animation-delay: 0.9s;
+}
+.text span:nth-child(5){
+  animation-delay: 1.2s;
+}
+.text span:nth-child(6){
+  animation-delay: 1.5s;
+}
+.text span:nth-child(7){
+  animation-delay: 1.8s;
+}
+.text span:nth-child(8){
+  animation-delay: 2.1s;
+}
+.text span:nth-child(9){
+  animation-delay: 2.4s;
+}
+.text span:nth-child(10){
+  animation-delay: 2.7s;
+}
+.text span:nth-child(11){
+  animation-delay: 3.0s;
+}
+.text span:nth-child(12){
+  animation-delay: 3.3s;
+}
+.text span:nth-child(13){
+  animation-delay: 3.6s;
+}
+.text span:nth-child(14){
+  animation-delay: 3.9s;
+}
+.text span:nth-child(15){
+  animation-delay: 4.2s;
+}
+.text span:nth-child(16){
+  animation-delay: 4.5s;
+}
+.text span:nth-child(17){
+  animation-delay: 4.8s;
+}
+.text span:nth-child(18){
+  animation-delay: 5.1s;
+}
+.text span:nth-child(19){
+  animation-delay: 5.4s;
+}
+.text span:nth-child(20){
+  animation-delay: 5.7s;
+}
+.text span:nth-child(21){
+  animation-delay: 6.0s;
+}
+.text span:nth-child(22){
+  animation-delay: 6.3s;
+}
+.text span:nth-child(23){
+  animation-delay: 6.6s;
+}
+.text span:nth-child(24){
+  animation-delay: 6.9s;
+}
+.text span:nth-child(25){
+  animation-delay: 7.2s;
+}
+.text span:nth-child(26){
+  animation-delay: 7.5s;
+}
+
+.text1 span{
+  color: chartreuse;
+}
+.banner > h1 {
+  margin: 5vmax;
+
+  font: 600 2.5vmax "Roboto";
+}
+
+.banner > p {
+  font: 300 1.4vmax "Lucida Sans";
+}
+
+.banner > a > button {
+  margin-bottom: 5vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+}
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+}
+
+.homeHeading {
+  text-align: center;
+  /*font-family: Roboto;*/
+  font-family: 'Cinzel', serif;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+ 
+}
+.good{
+  background-color: #4ae34a;
+  
+}
+.video{
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  border-radius: 10%;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  bottom: 50px;
+ display: block;
+  
+}
+.good .left{
+  float: right;
+  padding-right: 350px;
+  
+}
+.good .left ol{
+  font-size: 40px;
+}
+@media (max-width: 400px){
+  .good{
+    display: flex;
+  }
+  .good .left ol{
+    font-size: 5px;
+    
+  }
+  .left h1{
+    font-size: 5px;
+    text-align: center;
+    padding-left: 35px;
+  }
+  .good video{
+    width:80px;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .good{
+    max-width: 24rem;
+  }
+}
+.wrapper{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+}
+.wrapper h1{
+  font-size: 3em;
+  margin: 25px 0;
+  text-align: center;
+  font-weight: 500;
+}
+.content-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top:30px;
+}
+.card{
+  min-height: 220px;
+  width:320px;
+  padding: 30px;
+  border-radius: 5px;
+  /*--*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  margin:10px 4px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card i{
+  margin:20px;
+  
+}
+.card h2{
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+.card p{
+  color:#6c757d;
+  text-align: center;
+}
+.card:hover{
+
+}
+.card:hover i,
+.card:hover p{
+  color:#fff;
+}
+.card:hover h2{
+  font-weight: 600;
+}
+.card:nth-child(1):hover{
+  background: linear-gradient(45deg,
+                              rgba(255,28,8,0.7) 0%,
+                              rgba(255,0,82,0.7) 100%);
+
+}
+.card:nth-child(2):hover{
+  background: linear-gradient(45deg,
+                              rgba(255,28,8,0.7) 0%,
+                              rgba(255,0,82,0.7) 100%);
+
+}
+.card:nth-child(3):hover{
+  background: linear-gradient(45deg,
+                              rgba(255,28,8,0.7) 0%,
+                              rgba(255,0,82,0.7) 100%);
+
+}
+@media(max-width: 991px){
+  .wrapper{
+    padding: 25px;
+  }
+  .wrapper h1{
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .content-box{
+    flex-direction: column;
+    width:100%;
+    padding-right: 70px;
+  }
+  .card{
+    min-width: 300px;
+    margin:10px auto;
+  }
+}
+@media(max-width: 300px){
+  .wrapper{
+    padding: 25px;
+  }
+  .wrapper h1{
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .content-box{
+    flex-direction: column;
+    width:100%;
+    padding-right: 70px;
+  }
+  .card{
+    min-width: 300px;
+    margin:10px auto;
+  }
+}
+
+
+
+
+
